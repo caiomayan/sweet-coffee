@@ -1,7 +1,16 @@
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+html {
+  margin:2rem;
+}
+.icons {
+  width: 4rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topo {
+  font-size: 2rem;
+  margin-left: 2rem;
 }
