@@ -33,6 +33,11 @@ header {
   align-items: center;
 }
 
+nav ul li a:hover {
+  text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+}
+
+
 header a {
   background-color: #E9D8BF;
 }
@@ -115,6 +120,7 @@ body {
     margin-top: 200px;
     margin-right: 200px;
     margin-left: 20px;
+    margin-bottom: 200px;
     object-fit: cover;}
 
 .container {
@@ -191,6 +197,12 @@ p {
   border-radius: 20px;
 }
 
+.btn-intro:hover {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
+
 .bloco2{
   display: flex;
   flex-direction: column;  /* Organiza os itens verticalmente */
@@ -241,6 +253,11 @@ p {
   border-radius: 20px;
 }
 
+.btn-intro-2:hover {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
 .espaco2 {
   display: flex; /* Isso coloca a imagem e os textos lado a lado */
   align-items: center; /* Centraliza os itens verticalmente */
@@ -271,6 +288,47 @@ p {
 .btn-intro-3{
   width: 256px;
   color: black;
+  font-size: 15px; 
+  padding: 8px;  
+  line-height: 1.2;  
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;  
+  margin-top: 50px;  
+  margin-left: auto;
+  margin-right: auto; 
+  border: 4px solid black;  
+  border-radius: 20px;
+}
+
+.btn-intro-3:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content h1 {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-button {
+  width: 256px;
+  color: #fff;
+  background-color: black;
   font-size: 15px;  /* Tamanho da fonte reduzido */
   padding: 8px;  /* Padding ajustado para reduzir o tamanho */
   line-height: 1.2;  /* Ajuste do line-height */
@@ -280,8 +338,36 @@ p {
   text-transform: uppercase;
   display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
   margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto; /* Centraliza o botão */
-  border: 4px solid black;  /* Adiciona uma borda ao botão */
+  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
   border-radius: 20px;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
+  text-decoration-color: whitesmoke;}
+
+.social-icon {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-icon i {
+  font-size: 30px;
+  color: white;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icon i:hover {
+  color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
+}
+
+#copyright {
+  margin-top: 20px;
+  font-size: 14px;
 }
