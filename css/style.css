@@ -18,65 +18,76 @@
   text-decoration: none;
 }
 
-a {
-  color: black;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centralizado {
+  padding: 20px;
 }
 
 /* Cabeçalho */
 header {
   width: 100%;
-  height: 80px;
-  display: block;
-  background-color: #E9D8BF;
+  height: 7vh;
+  background-color: #e9d8bfea;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
 }
 
-nav ul li a:hover {
-  text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+header div {
+  position: relative;
+  display: flex;
+  width: 7vh;
+  height: 7vh;
 }
 
-
-header a {
-  background-color: #E9D8BF;
+header div.centralizado:hover {
+  padding: 11px;
 }
 
-header img {
-  background-color: #E9D8BF;
-  text-align: left;
-  width: 46px;
-  display: inline-block;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-nav {
-  display: inline-block;
-  font-size: 29px;
-  margin-left: 30px;
-  background-color: #E9D8BF;
+header div.centralizado {
+  padding: 12px;
+  transition: padding 0.76s ease;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
+  justify-content: center;
   margin: 0;
-  background-color: #E9D8BF;
+  padding: 0;
+  margin-right: 10px;
 }
 
 nav ul li {
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: 400;
+  margin: 0 12.5px;
 }
 
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  display: block;
+  transition: font-size 0.5s ease;
+}
+
+nav ul li a:hover {
+  font-size: 24px;
+}
+
+/* Corpo */
 body {
   background-color: #E4CEAF;
 }
 
-/* Corpo */
 #img {
   width: 100%;
   height: 400px;
@@ -121,13 +132,7 @@ body {
     margin-right: 200px;
     margin-left: 20px;
     margin-bottom: 200px;
-    object-fit: cover;}
-
-.container {
-  display: flex;
-  justify-content: center;  /* Centraliza horizontalmente */
-  align-items: center;      /* Centraliza verticalmente */
-  height: 200px;   }  
+    object-fit: cover;}  
 
 h1 {
   margin-top: 80px;
