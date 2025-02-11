@@ -1,9 +1,14 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
 /* Fontes */
-.kotta-one-regular {
-  font-family: "Kotta One", serif;
+.helvetica-neue {
+font-family: 'Helvetica Neue', sans-serif;
+}                          
+
+.birthstone-regular {
+  font-family: "Birthstone", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -14,7 +19,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: "Kotta One", serif;
+  font-family: "Helvetica Neue", serif;
   text-decoration: none;
 }
 
@@ -92,7 +97,7 @@ body {
 
 #img {
   width: 183.1vh;
-  height: auto;
+  height: 1000px;
   filter: brightness(0.3); 
   object-fit: cover;
 }
@@ -117,39 +122,41 @@ body {
   margin-right: 40px;
   margin-left: 20px;}
 
-  #img4 {
-
+#img4 {
   width: 100%;
   height: 400px;
   filter: brightness(0.4); 
   background-attachment: fixed;
   object-fit: cover;
-  position: relative;}
+  position: relative;
+}
 
-  #img5 {
-    width: 400px;
-    height: 600px;
-    filter: brightness(0.4);
-    margin-top: 200px;
-    margin-right: 200px;
-    margin-left: 20px;
-    margin-bottom: 200px;
-    object-fit: cover;}  
+#img5 {
+  width: 400px;
+  height: 600px;
+  filter: brightness(0.3);
+  margin-top: 200px;
+  margin-right: 200px;
+  margin-left: 20px;
+  margin-bottom: 200px;
+  object-fit: cover;
+}  
 
 .titulo1 {
   position: absolute;
   top: 40%;
-  font-size: 200px;
-  font-weight: 400;
+  font-size: 130px;
+  font-weight: 500;
   z-index: 999;
-  color: #E4CEAF;
-  text-shadow: black;
+  color: #e9d8bfea;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.459);
+  font-family: "Birthstone";
 }
 
-p {
+.p1 {
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 20px;
+  
 }
 
 .espaco {
@@ -158,7 +165,7 @@ p {
   gap: 200px;
 }
 
-.espaco p{
+.espaco p {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -168,7 +175,7 @@ p {
   margin-bottom: 100px;
 }
 
-.bloco{
+.bloco {
   display: flex;
   text-align: center;
   width:100% ;
@@ -182,7 +189,7 @@ p {
   padding-left: 64px;
 }
 
-.bloco h2{
+.bloco h2 {
   font-size: 45px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -213,7 +220,7 @@ p {
 }
 
 
-.bloco2{
+.bloco2 {
   display: flex;
   flex-direction: column;  /* Organiza os itens verticalmente */
   align-items: center;  /* Centraliza os itens horizontalmente */
@@ -224,7 +231,8 @@ p {
   background-color: black;
   margin-top: 300px;  /* Ajusta o espaço acima do bloco */
   margin-bottom: 50px;  /* Ajusta o espaço abaixo do bloco */
-  color: whitesmoke;}
+  color: whitesmoke;
+}
 
 .bloco2 h2{
     text-align: center;
@@ -232,7 +240,7 @@ p {
     font-size: 45px;
     font-weight: 400;
     margin-bottom: 60px;
-  }
+}
   
 .bloco2 p {
     text-align: center;
@@ -240,10 +248,10 @@ p {
     font-weight: 400;
     margin-bottom: 60px;
 
-  }
+}
 
 
-.btn-intro-2{
+.btn-intro-2 {
   width: 256px;
   color: #fff;
   background-color: black;
