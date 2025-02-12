@@ -26,6 +26,12 @@
   height: 100%;
 }
 
+@media screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+}
+
 .centralizado {
   padding: 20px;
 }
