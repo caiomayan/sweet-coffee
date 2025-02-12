@@ -31,6 +31,10 @@ font-family: 'Helvetica Neue', sans-serif;
   height: 100%;
 }
 
+section {
+  width: 100%;
+}
+
 .centralizado {
   padding: 20px;
 }
@@ -357,6 +361,7 @@ body {
 @media screen and (max-width: 640px) {
   header nav {
     font-size: 10px;
+    padding: 10px;
   }
 }
 
