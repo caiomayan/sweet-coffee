@@ -34,6 +34,11 @@ font-family: 'Helvetica Neue', sans-serif;
   padding: 20px;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
 /* Cabeçalho */
 header {
   width: 100%;
@@ -95,6 +100,43 @@ body {
 
 /* ---------------------------------------------------- */
 
+.container-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5%;
+  margin-top: 5%;
+}
+
+.container-txt2 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: auto;
+  margin: 3.5%;
+  margin-top: 10%;
+  gap: 100px;
+}
+
+.item {
+  background-color: rgba(0, 255, 255, 0);
+  margin: auto;
+  height: auto;
+  width: 1200px;
+  text-align: center;
+  text-shadow: 4px 4px 10px #00000028;
+}
+
+.item2 {
+  background-color: rgba(0, 255, 255, 0);
+  margin: auto;
+  height: auto;
+  width: 1200px;
+  text-align: center;
+  text-shadow: 4px 4px 10px #00000028;
+}
+
 #img {
   width: 183.1vh;
   height: 1000px;
@@ -102,37 +144,53 @@ body {
   object-fit: cover;
 }
 
-#img2 {
-  width: 50%;
-  height: 600px;
-  filter: brightness(0.4);
-  margin-top: 200px;
-  margin-right: 40px;
-  margin-left: 20px;
-  object-fit: cover;
+.item p {
+  font-size: 30px
 }
 
-#img3 {
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
+.item2 p {
+  font-size: 25px;
+}
+
+#img2 img {
+  width: auto;
   filter: brightness(0.4);
-  float: right;
-  margin-top: 60px;
-  margin-right: 40px;
-  margin-left: 20px;}
+  object-fit: cover;
+  box-shadow: 0px 0px 30px #00000031;
+}
+
+#img5 img {
+  width: auto;
+  filter: brightness(0.4);
+  object-fit: cover;
+  box-shadow: 0px 0px 30px #00000031;
+}
+
+.img3 {
+  width: auto;
+  filter: brightness(0.4);
+  align-items: center;
+  justify-items: right;
+  justify-content: right;
+}
+
+.img3 img {
+  object-fit: cover;
+  width: 800px;
+  height: 400px;
+}
 
 #img4 {
   width: 100%;
   height: 400px;
-  filter: brightness(0.4); 
+  filter: brightness(0.3); 
   background-attachment: fixed;
   object-fit: cover;
   position: relative;
 }
 
 #img5 {
-  width: 400px;
+  width: 600px;
   height: 600px;
   filter: brightness(0.3);
   margin-top: 200px;
@@ -153,88 +211,73 @@ body {
   font-family: "Birthstone";
 }
 
-.p1 {
-  font-size: 30px;
-  font-weight: 400;
-  
-}
-
-.espaco {
-  display: flex; 
-  align-items: center; 
-  gap: 200px;
-}
-
-.espaco p {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  margin-top: 100px;
-  margin-right: 80px;
-  margin-left: 50px;
-  margin-bottom: 100px;
-}
-
-.bloco {
+.section1 {
   display: flex;
   text-align: center;
-  width:100% ;
+  width: 100%;
   height: 500px;
-  padding: 16px;
   background-color: black;
-  margin-top: 200px;
+  margin: 150px 0px;
   color: whitesmoke;
-  justify-content: space-between;
   align-items: center;
-  padding-left: 64px;
 }
 
-.bloco h2 {
-  font-size: 45px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.btn-intro {
-  width: 256px;
-  color: #fff;
-  background-color: black;
-  font-size: 15px;  /* Tamanho da fonte reduzido */
-  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2;  /* Ajuste do line-height */
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
-  margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
-  border-radius: 20px;
-}
-
-.btn-intro:hover {
-  text-decoration: underline;
-  text-decoration-color: whitesmoke;
-}
-
-
-.bloco2 {
+.section1 div.principal {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;  /* Organiza os itens verticalmente */
-  align-items: center;  /* Centraliza os itens horizontalmente */
-  width: 100%;  /* Ajusta a largura do bloco conforme necessário (80% da largura da tela) */
-  max-width: 100%;  /* Limita a largura máxima do bloco */
-  height: auto;  /* A altura se ajusta automaticamente ao conteúdo */
-  padding: 16px;
+  align-items: center;
+  justify-items: center;
+  gap: 300px;
+}
+
+.item3 h2 {
+  font-size: 38px;
+  font-weight: 400;
+  margin: 35px;
+}
+
+.item3 {
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.button1 {
+  width: 100px;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 100px;
+  transition: padding 0.76s ease, font-size 0.76s ease;
+}
+
+.button1 a {
+  color: #fff;
+}
+
+.button1:hover {
+  padding: 10px;
+  font-size: 15.5px;
+}
+
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 100%; 
+  height: 850px; 
   background-color: black;
-  margin-top: 300px;  /* Ajusta o espaço acima do bloco */
-  margin-bottom: 50px;  /* Ajusta o espaço abaixo do bloco */
+  margin-top: 300px;
+  margin-bottom: 50px;
   color: whitesmoke;
 }
 
-.bloco2 h2{
+.section2 h2 {
     text-align: center;
     margin-top: 80px;
     font-size: 45px;
@@ -242,7 +285,7 @@ body {
     margin-bottom: 60px;
 }
   
-.bloco2 p {
+.section2 p {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -250,51 +293,49 @@ body {
 
 }
 
+.section2 div a {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 410px;
 
-.btn-intro-2 {
-  width: 256px;
+}
+
+
+.button3 {
+  width: 100px;
   color: #fff;
-  background-color: black;
-  font-size: 15px;  /* Tamanho da fonte reduzido */
-  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2;  /* Ajuste do line-height */
+  font-size: 15px;
+  padding: 8px;
   text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
-  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 100px;
+  transition: padding 0.76s ease, font-size 0.76s ease;
 }
 
-.btn-intro-2:hover {
-  text-decoration: underline;
-  text-decoration-color: whitesmoke;
+.button3 a {
+  color: #fff;
 }
 
-.espaco2 {
+.button3:hover {
+  padding: 10px;
+  font-size: 15.5px;
+}
+
+.space2 {
   display: flex; /* Isso coloca a imagem e os textos lado a lado */
   align-items: center; /* Centraliza os itens verticalmente */
-  gap: 20px; /* Adiciona um espaçamento entre a imagem e os textos */
+  gap: 250px; /* Adiciona um espaçamento entre a imagem e os textos */
+  margin-left: 110px;
 }
 
-.kotta-one-regular.container /* Coloquei essa classe aqui para especificar essa parte,
-pois essa foi a maneira que eu encontrei para fazer com que os textos se alinhassem corretamente*/
-{
-  display: flex;
-  flex-direction: column; /* Isso coloca o título e o parágrafo um abaixo do outro */
-  align-items: center; /* Centraliza o texto */
-  justify-content: flex-start; /*garante que os textos comecem no topo do contêiner*/
+.space2 div h1 {
+  font-weight: normal;
+  font-size: 120px;
 }
 
-p {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 10px;
+.space2 div p {
+  font-size: 20px;
 }
 
 .btn-intro-3{
@@ -325,6 +366,10 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+footer h1 {
+  font-weight: normal;
 }
 
 .footer-content h1 {
