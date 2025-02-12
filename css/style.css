@@ -193,7 +193,7 @@ body {
 .img3 img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 #img4 {
@@ -315,6 +315,11 @@ body {
   justify-items: center;
   margin-left: 410px;
 
+}
+
+section.space2 {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1500px) {
