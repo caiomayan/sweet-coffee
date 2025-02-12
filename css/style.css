@@ -322,7 +322,7 @@ section.space2 {
   height: auto;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
   #img5 {
     display: none;
   }
