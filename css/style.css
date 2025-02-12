@@ -62,6 +62,7 @@ header {
   z-index: 1000;
   top: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
+  overflow-x: hidden;
 }
 
 header div {
@@ -134,7 +135,7 @@ body {
   background-color: rgba(0, 255, 255, 0);
   margin: auto;
   height: auto;
-  width: 1200px;
+  width: 100%;
   text-align: center;
   text-shadow: 4px 4px 10px #00000028;
 }
@@ -143,7 +144,7 @@ body {
   background-color: rgba(0, 255, 255, 0);
   margin: auto;
   height: auto;
-  width: 1200px;
+  width: 100%;
   text-align: center;
   text-shadow: 4px 4px 10px #00000028;
 }
@@ -205,8 +206,8 @@ body {
 }
 
 #img5 {
-  width: 600px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   filter: brightness(0.3);
   margin-top: 200px;
   margin-right: 200px;
@@ -403,6 +404,7 @@ body {
   display: flex; /* Isso coloca a imagem e os textos lado a lado */
   align-items: center; /* Centraliza os itens verticalmente */
   margin-left: 100px;
+  width: 100%;
 }
 
 .space2 div h1 {
