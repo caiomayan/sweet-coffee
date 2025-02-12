@@ -23,6 +23,12 @@ font-family: 'Helvetica Neue', sans-serif;
   text-decoration: none;
 }
 
+@media screen and (max-width: 460px) {
+  header nav {
+    display: none;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
