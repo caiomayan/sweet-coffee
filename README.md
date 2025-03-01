@@ -1,3 +1,1 @@
-SweetCoffee
-
-Projeto de site de cafeteria para o curso de Sistemas para Internet - LM
+ifpb-projects - CSTSI-IFPB LM 2024.2
