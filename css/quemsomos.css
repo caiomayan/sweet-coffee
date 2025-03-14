@@ -1,0 +1,256 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+
+/* Fontes */
+.helvetica-neue {
+  font-family: 'Helvetica Neue', sans-serif;
+  }  
+
+
+/* Configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #E9D8BF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  header a {
+    background-color: #E9D8BF;
+  }
+  
+  header img {
+    background-color: #E9D8BF;
+    text-align: left;
+    width: 46px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  nav {
+    display: inline-block;
+    font-size: 29px;
+    margin-left: 30px;
+    background-color: #E9D8BF;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #E9D8BF;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  body {
+    background-color: #E4CEAF;
+  }
+
+  #img {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover;
+  }
+
+  .espaco {
+    display: flex; 
+    align-items: center; 
+    gap: 200px;
+  }
+
+  .espaco2 {
+    text-align: center;
+  }
+
+  .kotta-one-regular {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 200px;   
+    margin-bottom: 200px;
+  } 
+
+  h1 {
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+p {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.espaco {
+  background-color: black;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o título e parágrafo centralizados */
+.text-center {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Estilo da seção (espaco2) */
+.espaco2 {
+  padding: 50px 20px; /* Espaçamento interno da seção */
+  text-align: center; /* Centraliza todo o texto dentro da seção */
+  background-color: #E4CEAF; /* Fundo branco para destacar a área */
+  margin-bottom: 80px;
+}
+
+/* Container que agrupa os depoimentos */
+.depoimentos-container {
+  display: flex; /* Usando flexbox para organizar os depoimentos lado a lado */
+  justify-content: center; /* Centraliza os depoimentos horizontalmente */
+  gap: 60px; /* Espaço entre os depoimentos */
+  flex-wrap: wrap; /* Permite que os depoimentos quebrem para uma nova linha em telas menores */
+}
+
+/* Estilo para cada quadrado de depoimento */
+.depoimento {
+  background-color: black; /* Cor de fundo branca para cada quadrado */
+  padding: 20px; /* Espaçamento interno do depoimento */
+  width: 500px; /* Largura fixa para cada depoimento */
+  text-align: center; /* Centraliza o texto dentro de cada quadrado */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave no efeito de hover */
+}
+
+/* Efeito de aumento e sombra quando o mouse passa por cima */
+.depoimento:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do depoimento em 5% */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra quando o mouse passa por cima */
+}
+
+/* Estilo para as fotos das pessoas */
+.foto {
+  width: 80px; /* Largura da foto */
+  height: 80px; /* Altura da foto */
+  border-radius: 50%; /* Tornando a foto redonda */
+  object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorção */
+  margin-bottom: 15px; /* Espaçamento abaixo da foto */
+}
+
+/* Estilo para o nome da pessoa */
+.nome {
+  font-size: 1.2em; /* Tamanho da fonte do nome */
+  font-weight: bold; /* Torna o nome em negrito */
+  margin-bottom: 10px; /* Espaço abaixo do nome */
+  color: whitesmoke;
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+/* Estilo para o texto do depoimento */
+.texto {
+  font-size: 1em; /* Tamanho da fonte do depoimento */
+  color: whitesmoke; /* Cor de texto suave */
+
+}
+
+hr {
+  margin: 30px;
+}
+
+.avaliacao {
+  color: whitesmoke;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content h1 {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contact-button {
+  width: 256px;
+  color: #fff;
+  background-color: black;
+  font-size: 15px;  /* Tamanho da fonte reduzido */
+  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
+  line-height: 1.2;  /* Ajuste do line-height */
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
+  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto; /* Centraliza o botão */
+  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
+  border-radius: 20px;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
+  text-decoration-color: whitesmoke;}
+
+.social-icon {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-icon i {
+  font-size: 30px;
+  color: white;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icon i:hover {
+  color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
+}
+
+#copyright {
+  margin-top: 20px;
+  font-size: 14px;}
