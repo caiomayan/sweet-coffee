@@ -1,12 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-
-/* Fontes */
-
-.helvetica-neue {
-  font-family: 'Helvetica Neue', sans-serif;
-}     
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Configurações globais */
 * {
@@ -14,9 +7,9 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: "Helvetica Neue", serif;
+  font-family: "Figtree", sans-serif;
   text-decoration: none;
-  box-sizing: border-box;
+  user-select: none;
 }
 
 .container {
@@ -26,17 +19,8 @@
   height: 100%;
 }
 
-@media screen and (max-width: 700px) {
-  header nav {
-    display: none;
-  }
-}
-
-.container2 { /* Para grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 10px; 
-  padding: 10px;
+section {
+  width: 100vw;
 }
 
 .centralizado {
@@ -45,7 +29,7 @@
 
 /* Cabeçalho */
 header {
-  width: 100%;
+  width: 100vw;
   height: 7vh;
   background-color: #e9d8bfea;
   display: flex;
@@ -55,6 +39,8 @@ header {
   z-index: 1000;
   top: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
+  overflow-x: hidden;
+  text-decoration: none;
 }
 
 header div {
@@ -65,89 +51,118 @@ header div {
 }
 
 header div.centralizado:hover {
-  padding: 11px;
+  transform: scale(1.05);
 }
 
 header div.centralizado {
   padding: 12px;
-  transition: padding 0.76s ease;
+  transition: transform 0.3s ease;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
-header nav ul li {
-  margin: 0 12.5px;
+nav ul li {
+  padding: 0 12.5px;
 }
 
-header nav ul li a {
+nav ul li a {
   color: rgb(0, 0, 0);
   font-size: 23px;
   display: block;
-  transition: font-size 0.5s ease;
 }
 
-header nav ul li a:hover {
-  font-size: 24px;
+header#menu-mobile {
+  display: none;
 }
 
-/* Corpo */
+header#menu-pc nav ul li {
+  transition: transform 0.3s ease;
+}
+
+header#menu-pc nav ul li:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px) {
+  header#menu-pc {
+    display: none;
+  }
+
+  header#menu-mobile {
+    display: block;
+  }
+}
+
+#mobile-nav {
+  background-color: rgba(233, 216, 191, 0.9); /* Cor de fundo com opacidade */
+  position: fixed; /* Fixa o menu na tela */
+  top: 0; /* Alinha o menu ao topo da página */
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  display: none; /* Inicialmente oculto */
+}
+
+#mobile-nav ul {
+  flex-direction: column; /* Alinha os itens em coluna */
+  padding: 10px 0; /* Espaçamento interno */
+}
+
+#mobile-nav ul li {
+  padding: 10px 0; /* Espaçamento entre os itens */
+  text-align: center; /* Centraliza o texto */
+}
+
+#mobile-nav ul li a {
+  font-size: 20px; /* Tamanho da fonte */
+  color: rgb(0, 0, 0); /* Cor do texto */
+}
+
 body {
   background-color: #E4CEAF;
 }
 
-/* --------------------- */
-
+/* Estilos do Cardápio */
 .section1 {
-  margin-left: 40px;
-  height: 1450px;
+  padding: 20px;
 }
 
-h1 {
-  margin: 20px;
+.section1 h1 {
   text-align: center;
   font-size: 60px;
   font-weight: normal;
-}
-
-nav 
-
-p {
-  text-align: left;
-  font-size: 45px;
-  font-weight: 400;
-}
-
-ul li {
-  font-size: 40px;
-  font-weight: 400;
-  margin-left: 40px;
-  text-align: left; /* Alinha o texto à esquerda */
-  padding-left: 20px; /* Espaçamento extra à esquerda */
-  list-style-type: none; /* Remove os marcadores da lista */
-  padding: 0; /* Remove o espaçamento padrão do navegador */
-  margin-bottom: 10px; /* Espaçamento entre os itens */
-  font-size: 18px; /* Tamanho da fonte */
-
+  margin-bottom: 20px;
 }
 
 .section1 p {
-  margin-bottom: 20px;
+  text-align: left;
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
-ul {
-  margin: 20px;
+.section1 ul {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  padding: 0;
+  margin: 20px 0;
 }
 
+.section1 ul li {
+  font-size: 18px;
+  margin: 5px 0; /* Espaçamento entre os itens */
+  padding-left: 20px; /* Espaçamento extra à esquerda */
+  text-align: left; /* Alinha o texto à esquerda */
+}
 
-/*Rodapé*/
+/* Rodapé */
 footer {
   background-color: black;
   color: white;
@@ -163,34 +178,30 @@ footer {
 .footer-content p {
   margin: 5px 0;
   font-size: 14px;
-  text-align: center;
 }
 
 .contact-button {
   width: 256px;
   color: #fff;
   background-color: black;
-  font-size: 15px;  /* Tamanho da fonte reduzido */
-  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2;  /* Ajuste do line-height */
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
+  display: block;
+  margin: 20px auto; /* Centraliza o botão */
+  border: 4px solid whitesmoke;
   border-radius: 20px;
 }
 
 .contact-button:hover {
   background-color: black;
   color: white;
-  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
-  text-decoration-color: whitesmoke;}
+  text-decoration: underline;
+}
 
 .social-icon {
   display: inline-block;
@@ -205,11 +216,5 @@ footer {
 }
 
 .social-icon i:hover {
-  color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
-}
-
-#copyright {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
+  color: #E4CEAF;
 }

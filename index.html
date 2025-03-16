@@ -7,12 +7,22 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.ico"/>
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+                mobileNav.style.display = 'block'; // Exibe o menu
+            } else {
+                mobileNav.style.display = 'none'; // Oculta o menu
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
+    <header id="menu-pc">
         <a href="">
-            <div class="container">
-                <div class="centralizado">
+            <div class="container logo">
+                <div class="centralizado logo">
                     <img src="img/SweetCoffeeLogo-header.png" alt="">
                 </div>
             </div>
@@ -21,14 +31,34 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="pages/cardapio.html">Cardápio</a></li>
-                <li><a href="pages/reserva.html">Faça sua reserva</a></li>
                 <li><a href="pages/quemsomos.html">Quem somos</a></li>
                 <li><a href="pages/faleconosco.html">Fale conosco</a></li>
             </ul>
         </nav>
     </header>
 
-<!-- A partir, específicos -->
+    <header id="menu-mobile">
+        <div class="container logo">
+            <div class="centralizado logo" onclick="toggleMenu()">
+                <img src="img/SweetCoffeeLogo-header.png" alt="">
+            </div>
+        </div>
+        <nav id="mobile-nav">
+            <div class="container logo">
+                <div class="centralizado logo" onclick="toggleMenu()">
+                    <img src="img/SweetCoffeeLogo-header.png" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/cardapio.html">Cardápio</a></li>
+                <li><a href="pages/quemsomos.html">Quem somos</a></li>
+                <li><a href="pages/faleconosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- A partir, corpo -->
 
     <section>
         <div class="container">
@@ -44,7 +74,6 @@
                     Aqui, o café vai além do sabor — é uma experiência que começa com o grão e termina com um sorriso no seu rosto. Venha nos visitar e descubra o prazer de saborear cada gole em um lugar onde a paixão por café é o ingrediente principal. Sweet Coffee, o café que você merece, do jeito que você gosta!
                 </p>
             </div>
-
         </div>
     </section>
 
@@ -61,7 +90,7 @@
         </div>
     </section>
 
-    <section class="section1">
+    <section class="container-txt3">
         <div class="principal">
             <div class="item3">
                 <h2>Uma novidade quentinha para você!</h2>
