@@ -1,5 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Configurações globais */
 
@@ -101,37 +101,36 @@ header#menu-mobile {
 }
 
 #mobile-nav {
-  background-color: rgba(233, 216, 191, 0.9); /* Cor de fundo com opacidade */
-  position: fixed; /* Fixa o menu na tela */
-  top: 0; /* Alinha o menu ao topo da página */
+  background-color: rgba(233, 216, 191, 0.9);
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-  display: none; /* Inicialmente oculto */
+  z-index: 1000;
+  display: none;
 }
 
 #mobile-nav ul {
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 10px 0; /* Espaçamento interno */
+  flex-direction: column;
+  padding: 10px 0;
 }
 
 #mobile-nav ul li {
-  padding: 10px 0; /* Espaçamento entre os itens */
-  text-align: center; /* Centraliza o texto */
+  padding: 10px 0;
+  text-align: center;
 }
 
 #mobile-nav ul li a {
-  font-size: 20px; /* Tamanho da fonte */
-  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 
 /* Corpo */
 body {
-  background-color: #E4CEAF;
+  background-color: #e4ceaf;
 }
 
-/* Estilos do conteúdo */
 section {
   width: 100vw;
   padding: 20px;
@@ -157,30 +156,28 @@ p {
   text-align: center;
 }
 
-/* Seção de Mapa e Visita */
 .espaco {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Ajuste o espaço entre os elementos */
-  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas menores */
-  margin: 20px 0; /* Margem superior e inferior */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
   background-color: black;
 }
 
 .espaco iframe {
-  flex: 1; /* Permite que o iframe ocupe o espaço disponível */
-  min-width: 300px; /* Largura mínima para o iframe */
-  height: 300px; /* Altura do iframe */
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
 }
 
 .espaco div {
-  flex: 1; /* Permite que o div ocupe o espaço disponível */
-  text-align: center; /* Centraliza o texto */
+  flex: 1;
+  text-align: center;
   color: #f7e5d0;
 }
 
-/* Seção de Depoimentos */
 .espaco2 {
   padding: 50px 20px;
   text-align: center;
@@ -191,40 +188,37 @@ p {
 .depoimentos-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espaço entre os depoimentos */
-  flex-wrap: wrap; /* Permite que os depoimentos quebrem para uma nova linha em telas menores */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .depoimento {
   background-color: black;
   padding: 20px;
-  width: 300px; /* Largura fixa para cada depoimento */
+  width: 300px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Efeito de aumento e sombra quando o mouse passa por cima */
 .depoimento:hover {
-  transform: scale(1.05); /* Aumenta o tamanho do depoimento em 5% */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra quando o mouse passa por cima */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para as fotos das pessoas */
 .foto {
-  width: 80px; /* Largura da foto */
-  height: 80px; /* Altura da foto */
-  border-radius: 50%; /* Tornando a foto redonda */
-  object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorção */
-  margin-bottom: 15px; /* Espaçamento abaixo da foto */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-/* Estilo para o nome da pessoa */
 .nome {
-  font-size: 1.2em; /* Tamanho da fonte do nome */
-  font-weight: bold; /* Torna o nome em negrito */
-  margin-bottom: 10px; /* Espaço abaixo do nome */
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
   color: whitesmoke;
 }
 
@@ -232,10 +226,9 @@ h3 {
   color: whitesmoke;
 }
 
-/* Estilo para o texto do depoimento */
 .texto {
-  font-size: 1em; /* Tamanho da fonte do depoimento */
-  color: whitesmoke; /* Cor de texto suave */
+  font-size: 1em;
+  color: whitesmoke;
 }
 
 hr {
@@ -267,26 +260,26 @@ footer {
   width: 256px;
   color: #fff;
   background-color: black;
-  font-size: 15px; /* Tamanho da fonte reduzido */
-  padding: 8px; /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2; /* Ajuste do line-height */
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  display: block; /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px; /* Adiciona um espaçamento entre o texto e o botão */
+  display: block;
+  margin-top: 50px;
   margin-bottom: 30px;
   margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke; /* Adiciona uma borda ao botão */
+  margin-right: auto;
+  border: 4px solid whitesmoke;
   border-radius: 20px;
 }
 
 .contact-button:hover {
   background-color: black;
   color: white;
-  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
+  text-decoration: underline;
   text-decoration-color: whitesmoke;
 }
 
@@ -303,7 +296,7 @@ footer {
 }
 
 .social-icon i:hover {
-  color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
+  color: #ffcc00;
 }
 
 #copyright {
@@ -312,13 +305,14 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-  .espaco  {
+  .espaco {
     display: none;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .kotta-one-regular, .kotta-one-regular-2 { 
+  .kotta-one-regular,
+  .kotta-one-regular-2 {
     display: none;
   }
 }

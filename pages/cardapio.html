@@ -1,136 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio</title>
-    <link rel="stylesheet" type="text/css" href="../css/cardapio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../css/cardapio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
     <script>
-        function toggleMenu() {
-            const mobileNav = document.getElementById('mobile-nav');
-            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
-                mobileNav.style.display = 'block'; // Exibe o menu
-            } else {
-                mobileNav.style.display = 'none'; // Oculta o menu
-            }
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobile-nav");
+        if (
+          mobileNav.style.display === "none" ||
+          mobileNav.style.display === ""
+        ) {
+          mobileNav.style.display = "block"; // Exibe o menu
+        } else {
+          mobileNav.style.display = "none"; // Oculta o menu
         }
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="menu-pc">
-        <a href="">
-            <div class="container logo">
-                <div class="centralizado logo">
-                    <img src="../img/SweetCoffeeLogo-header.png" alt="">
-                </div>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../pages/cardapio.html">Cardápio</a></li>
-                <li><a href="../pages/quemsomos.html">Quem somos</a></li>
-                <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
+      <a href="">
+        <div class="container logo">
+          <div class="centralizado logo">
+            <img src="../img/SweetCoffeeLogo-header.png" alt="" />
+          </div>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../pages/cardapio.html">Cardápio</a></li>
+          <li><a href="../pages/quemsomos.html">Quem somos</a></li>
+          <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
     <header id="menu-mobile">
-        <div class="container logo">
-            <div class="centralizado logo" onclick="toggleMenu()">
-                <img src="../img/SweetCoffeeLogo-header.png" alt="">
-            </div>
+      <div class="container logo">
+        <div class="centralizado logo" onclick="toggleMenu()">
+          <img src="../img/SweetCoffeeLogo-header.png" alt="" />
         </div>
-        <nav id="mobile-nav">
-            <div class="container logo">
-                <div class="centralizado logo" onclick="toggleMenu()">
-                    <img src="../img/SweetCoffeeLogo-header.png" alt="">
-                </div>
-            </div>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../pages/cardapio.html">Cardápio</a></li>
-                <li><a href="../pages/quemsomos.html">Quem somos</a></li>
-                <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav id="mobile-nav">
+        <div class="container logo">
+          <div class="centralizado logo" onclick="toggleMenu()">
+            <img src="../img/SweetCoffeeLogo-header.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../pages/cardapio.html">Cardápio</a></li>
+          <li><a href="../pages/quemsomos.html">Quem somos</a></li>
+          <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
-<!-- A partir, específicos -->
+    <!-- A partir, específicos -->
     <section class="section1">
-        <h1>Cardápio</h1>
-        <p>Cafés Especiais</p>
-        <nav>
-            <ul>
-                <li>Café Preto (Expresso) – R$ 5,00</li>
-                <li>Café Americano – R$ 6,00</li>
-                <li>Café Latte – R$ 8,00</li>
-                <li>Cappuccino – R$ 9,00</li>
-                <li>Macchiato – R$ 7,50</li>
-                <li>Mocha – R$ 9,50</li>
-                <li>Café Gelado – R$ 8,50</li>
-            </ul>
-        </nav>
-    
-        <p>Cafés Gelados</p>
+      <h1>Cardápio</h1>
+      <p>Cafés Especiais</p>
+      <nav>
         <ul>
-            <li>Frappuccino de Café – R$ 12,00</li>
-            <li>Frappuccino de Chocolate – R$ 12,00</li>
-            <li>Café com Sorvete – R$ 10,00</li>
-            
+          <li>Café Preto (Expresso) – R$ 5,00</li>
+          <li>Café Americano – R$ 6,00</li>
+          <li>Café Latte – R$ 8,00</li>
+          <li>Cappuccino – R$ 9,00</li>
+          <li>Macchiato – R$ 7,50</li>
+          <li>Mocha – R$ 9,50</li>
+          <li>Café Gelado – R$ 8,50</li>
         </ul>
+      </nav>
 
-        <p>Chás</p>
-        <ul>
-            <li>Chá Preto – R$ 6,00</li>
-            <li>Chá de Ervas – R$ 6,50</li>
-            <li>Chá Gelado de Limão – R$ 7,00</li>
-            <li>Chá Latte – R$ 8,00</li> 
-        </ul>
+      <p>Cafés Gelados</p>
+      <ul>
+        <li>Frappuccino de Café – R$ 12,00</li>
+        <li>Frappuccino de Chocolate – R$ 12,00</li>
+        <li>Café com Sorvete – R$ 10,00</li>
+      </ul>
 
-        <p>Doces e Sobremesas</p>
-        <ul>
-            <li>Bolo de Chocolate – R$ 6,50</li>
-            <li>Bombom de Morango – R$ 4,00</li>
-            <li>Torta de Limão – R$ 8,00</li>
-            <li>Brownie de Chocolate – R$ 7,00</li>
-            <li>Croissant de Chocolate – R$ 6,00</li>
-            <li>Churros (4 unidades) – R$ 8,00</li>
-        </ul>
+      <p>Chás</p>
+      <ul>
+        <li>Chá Preto – R$ 6,00</li>
+        <li>Chá de Ervas – R$ 6,50</li>
+        <li>Chá Gelado de Limão – R$ 7,00</li>
+        <li>Chá Latte – R$ 8,00</li>
+      </ul>
 
-        <p>Salgados</p>
-        <ul>
-            <li>Coxinha de Frango – R$ 6,00</li>
-            <li>Empada de Frango – R$ 5,50</li>
-            <li>Quiche de Alho-Poró – R$ 9,00</li>
-            <li>Sanduíche de Presunto e Queijo – R$ 12,00</li>
-            <li>Panini de Peito de Peru – R$ 14,00</li>
-        </ul>
+      <p>Doces e Sobremesas</p>
+      <ul>
+        <li>Bolo de Chocolate – R$ 6,50</li>
+        <li>Bombom de Morango – R$ 4,00</li>
+        <li>Torta de Limão – R$ 8,00</li>
+        <li>Brownie de Chocolate – R$ 7,00</li>
+        <li>Croissant de Chocolate – R$ 6,00</li>
+        <li>Churros (4 unidades) – R$ 8,00</li>
+      </ul>
 
-        <p>Combos</p>
-        <ul>
-            <li>Combo Café Preto + Empada de Frango – R$ 8,00</li>
-            <li>Combo Café Americano + Bolo de Chocolate – R$ 12,00</li>
-            <li>Combo Cappuccino + Croissant de Chocolate – R$ 14,00</li>
-        </ul>
+      <p>Salgados</p>
+      <ul>
+        <li>Coxinha de Frango – R$ 6,00</li>
+        <li>Empada de Frango – R$ 5,50</li>
+        <li>Quiche de Alho-Poró – R$ 9,00</li>
+        <li>Sanduíche de Presunto e Queijo – R$ 12,00</li>
+        <li>Panini de Peito de Peru – R$ 14,00</li>
+      </ul>
+
+      <p>Combos</p>
+      <ul>
+        <li>Combo Café Preto + Empada de Frango – R$ 8,00</li>
+        <li>Combo Café Americano + Bolo de Chocolate – R$ 12,00</li>
+        <li>Combo Cappuccino + Croissant de Chocolate – R$ 14,00</li>
+      </ul>
     </section>
 
     <footer>
-        <div class="footer-content">
-          <h1>Ficou alguma dúvida?</h1>
-          <a href="../pages/faleconosco.html"><button class="contact-button">Fale conosco</button></a>
-          <h1>Nossas Redes</h1>
-          <p>Nos siga para ficar por dentro de qualquer atualização e não perder nada</p>
-          
-          <a href="#" class="social-icon">
-            <i class="fab fa-youtube"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-xmark"></i>
-          </a>
-      
-          <p id="copyright" class="text-center"> &copy; 2025</p>
-        </div>
+      <div class="footer-content">
+        <h1>Ficou alguma dúvida?</h1>
+        <a href="../pages/faleconosco.html"
+          ><button class="contact-button">Fale conosco</button></a
+        >
+        <h1>Nossas Redes</h1>
+        <p>
+          Nos siga para ficar por dentro de qualquer atualização e não perder
+          nada
+        </p>
+
+        <a href="#" class="social-icon">
+          <i class="fab fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <p id="copyright" class="text-center">&copy; 2025</p>
+      </div>
     </footer>
-</body>
+  </body>
+</html>

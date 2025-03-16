@@ -1,5 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Configurações globais */
 * {
@@ -101,36 +101,37 @@ header#menu-pc nav ul li:hover {
 }
 
 #mobile-nav {
-  background-color: rgba(233, 216, 191, 0.9); /* Cor de fundo com opacidade */
-  position: fixed; /* Fixa o menu na tela */
-  top: 0; /* Alinha o menu ao topo da página */
+  background-color: rgba(233, 216, 191, 0.9);
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-  display: none; /* Inicialmente oculto */
+  z-index: 1000;
+  display: none;
 }
 
 #mobile-nav ul {
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 10px 0; /* Espaçamento interno */
+  flex-direction: column;
+  padding: 10px 0;
 }
 
 #mobile-nav ul li {
-  padding: 10px 0; /* Espaçamento entre os itens */
-  text-align: center; /* Centraliza o texto */
+  padding: 10px 0;
+  text-align: center;
 }
 
 #mobile-nav ul li a {
-  font-size: 20px; /* Tamanho da fonte */
-  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
+
+/* Corpo */
 
 body {
-  background-color: #E4CEAF;
+  background-color: #e4ceaf;
 }
 
-/* Estilos do Cardápio */
 .section1 {
   padding: 20px;
 }
@@ -150,16 +151,16 @@ body {
 
 .section1 ul {
   display: flex;
-  flex-direction: column; /* Alinha os itens em coluna */
+  flex-direction: column;
   padding: 0;
   margin: 20px 0;
 }
 
 .section1 ul li {
   font-size: 18px;
-  margin: 5px 0; /* Espaçamento entre os itens */
-  padding-left: 20px; /* Espaçamento extra à esquerda */
-  text-align: left; /* Alinha o texto à esquerda */
+  margin: 5px 0;
+  padding-left: 20px;
+  text-align: left;
 }
 
 /* Rodapé */
@@ -192,7 +193,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
-  margin: 20px auto; /* Centraliza o botão */
+  margin: 20px auto;
   border: 4px solid whitesmoke;
   border-radius: 20px;
 }
@@ -216,5 +217,5 @@ footer {
 }
 
 .social-icon i:hover {
-  color: #E4CEAF;
+  color: #e4ceaf;
 }

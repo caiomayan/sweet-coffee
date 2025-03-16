@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mensagem enviada!</title>
-    <link rel="stylesheet" type="text/css" href="../css/msg-enviada.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../css/msg-enviada.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
     <script>
-        function toggleMenu() {
-            const mobileNav = document.getElementById('mobile-nav');
-            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
-                mobileNav.style.display = 'block'; // Exibe o menu
-            } else {
-                mobileNav.style.display = 'none'; // Oculta o menu
-            }
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobile-nav");
+        if (
+          mobileNav.style.display === "none" ||
+          mobileNav.style.display === ""
+        ) {
+          mobileNav.style.display = "block"; // Exibe o menu
+        } else {
+          mobileNav.style.display = "none"; // Oculta o menu
         }
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="menu-pc">
-        <a href="">
-            <div class="container logo">
-                <div class="centralizado logo">
-                    <img src="../img/SweetCoffeeLogo-header.png" alt="">
-                </div>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../pages/cardapio.html">Cardápio</a></li>
-                <li><a href="../pages/quemsomos.html">Quem somos</a></li>
-                <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
+      <a href="">
+        <div class="container logo">
+          <div class="centralizado logo">
+            <img src="../img/SweetCoffeeLogo-header.png" alt="" />
+          </div>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../pages/cardapio.html">Cardápio</a></li>
+          <li><a href="../pages/quemsomos.html">Quem somos</a></li>
+          <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
     <header id="menu-mobile">
-        <div class="container logo">
-            <div class="centralizado logo" onclick="toggleMenu()">
-                <img src="../img/SweetCoffeeLogo-header.png" alt="">
-            </div>
+      <div class="container logo">
+        <div class="centralizado logo" onclick="toggleMenu()">
+          <img src="../img/SweetCoffeeLogo-header.png" alt="" />
         </div>
-        <nav id="mobile-nav">
-            <div class="container logo">
-                <div class="centralizado logo" onclick="toggleMenu()">
-                    <img src="../img/SweetCoffeeLogo-header.png" alt="">
-                </div>
-            </div>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../pages/cardapio.html">Cardápio</a></li>
-                <li><a href="../pages/quemsomos.html">Quem somos</a></li>
-                <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav id="mobile-nav">
+        <div class="container logo">
+          <div class="centralizado logo" onclick="toggleMenu()">
+            <img src="../img/SweetCoffeeLogo-header.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../pages/cardapio.html">Cardápio</a></li>
+          <li><a href="../pages/quemsomos.html">Quem somos</a></li>
+          <li><a href="../pages/faleconosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="container">
-        <div class="centralizado">
-            <h1>Mensagem enviada com sucesso</h1>
-        </div>
-        <a href="../pages/faleconosco.html">
+      <div class="centralizado">
+        <h1>Mensagem enviada com sucesso</h1>
+      </div>
+      <a href="../pages/faleconosco.html">
         <i class="fas fa-chevron-left">Voltar</i>
-    </a>
-    </p>
-</body>
-
-    
+      </a>
+    </section>
+  </body>
+</html>

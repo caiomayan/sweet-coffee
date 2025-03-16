@@ -1,5 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Configurações globais */
 
@@ -102,43 +102,40 @@ header#menu-pc nav ul li:hover {
 }
 
 #mobile-nav {
-  background-color: rgba(233, 216, 191, 0.9); /* Cor de fundo com opacidade */
-  position: fixed; /* Fixa o menu na tela */
-  top: 0; /* Alinha o menu ao topo da página */
+  background-color: rgba(233, 216, 191, 0.9);
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-  display: none; /* Inicialmente oculto */
+  z-index: 1000;
+  display: none;
 }
 
 #mobile-nav ul {
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 10px 0; /* Espaçamento interno */
+  flex-direction: column;
+  padding: 10px 0;
 }
 
 #mobile-nav ul li {
-  padding: 10px 0; /* Espaçamento entre os itens */
-  text-align: center; /* Centraliza o texto */
+  padding: 10px 0;
+  text-align: center;
 }
 
 #mobile-nav ul li a {
-  font-size: 20px; /* Tamanho da fonte */
-  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 
 /* Corpo */
 body {
-  background-color: #E4CEAF;
+  background-color: #e4ceaf;
 }
 
-/* ---------------------------------------------------- */
-
-/* Estilos do conteúdo */
 section {
   width: 100vw;
   padding: 20px;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 #img {
@@ -159,27 +156,26 @@ p {
   margin: 20px 0;
 }
 
-/* Formulário */
 .form {
   display: flex;
-  flex-direction: column; /* Alinha os elementos em coluna */
-  align-items: center; /* Centraliza os elementos */
-  margin: 20px 0; /* Margem superior e inferior */
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 }
 
 textarea {
-  width: 100%; /* Largura total */
-  max-width: 600px; /* Largura máxima */
-  height: 150px; /* Altura do textarea */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  border: 1px solid #ccc; /* Borda padrão */
-  background-color: #fff; /* Fundo branco */
-  color: #000; /* Cor do texto */
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
 }
 
 .button1 {
-  width: 200px; /* Largura do botão */
+  width: 200px;
   color: #000000;
   font-size: 15px;
   padding: 8px;
@@ -187,12 +183,12 @@ textarea {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 100px;
   transition: padding 0.76s ease, font-size 0.76s ease;
-  margin-top: 20px; /* Margem superior */
+  margin-top: 20px;
 }
 
 .button1 a {
-  color: #000; /* Cor do texto do botão */
-  text-decoration: none; /* Remove o sublinhado */
+  color: #000;
+  text-decoration: none;
 }
 
 .button1:hover {
@@ -203,7 +199,7 @@ textarea {
 ::placeholder {
   color: gray !important;
   font-style: italic;
-  opacity: 1; 
+  opacity: 1;
 }
 
 @media screen and (max-width: 700px) {
@@ -216,7 +212,7 @@ textarea {
   }
 }
 
-ul li{
+ul li {
   font-size: 20px;
   font-weight: 400;
   margin-top: 40px;
@@ -225,76 +221,75 @@ ul li{
 }
 
 i {
-  margin-right: 20px;  
-  font-size: 20px;     /* Ajusta o tamanho do ícone */
-  color: #000;         /* Define a cor do ícone (preto neste exemplo) */
+  margin-right: 20px;
+  font-size: 20px;
+  color: #000;
 }
 
-
-
-/*Rodapé*/
+/* Rodapé */
 
 footer {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-content h1 {
-    margin: 10px 0;
-    font-size: 30px;
-  }
-  
-  .footer-content p {
-    margin: 5px 0;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  .contact-button {
-    width: 256px;
-    color: #fff;
-    background-color: black;
-    font-size: 15px;  /* Tamanho da fonte reduzido */
-    padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-    line-height: 1.2;  /* Ajuste do line-height */
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-    margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto; /* Centraliza o botão */
-    border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
-    border-radius: 20px;
-  }
-  
-  .contact-button:hover {
-    background-color: black;
-    color: white;
-    text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
-    text-decoration-color: whitesmoke;}
-  
-  .social-icon {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .social-icon i {
-    font-size: 30px;
-    color: white;
-    margin: 0 30px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon i:hover {
-    color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
-  }
-  
-  #copyright {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-  }
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content h1 {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-button {
+  width: 256px;
+  color: #fff;
+  background-color: black;
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid whitesmoke;
+  border-radius: 20px;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-icon i {
+  font-size: 30px;
+  color: white;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icon i:hover {
+  color: #ffcc00;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}

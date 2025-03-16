@@ -1,5 +1,5 @@
 /* Importações */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Configurações globais */
 
@@ -101,37 +101,35 @@ header#menu-mobile {
 }
 
 #mobile-nav {
-  background-color: rgba(233, 216, 191, 0.9); /* Cor de fundo com opacidade */
-  position: fixed; /* Fixa o menu na tela */
-  top: 0; /* Alinha o menu ao topo da página */
+  background-color: rgba(233, 216, 191, 0.9);
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-  display: none; /* Inicialmente oculto */
+  z-index: 1000;
+  display: none;
 }
 
 #mobile-nav ul {
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 10px 0; /* Espaçamento interno */
+  flex-direction: column;
+  padding: 10px 0;
 }
 
 #mobile-nav ul li {
-  padding: 10px 0; /* Espaçamento entre os itens */
-  text-align: center; /* Centraliza o texto */
+  padding: 10px 0;
+  text-align: center;
 }
 
 #mobile-nav ul li a {
-  font-size: 20px; /* Tamanho da fonte */
-  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 
 /* Corpo */
 body {
-  background-color: #E4CEAF;
+  background-color: #e4ceaf;
 }
-
-/* ---------------------------------------------------- */
 
 .container-txt {
   display: flex;
@@ -151,7 +149,6 @@ body {
   margin-top: 10%;
   gap: 100px;
 }
-
 
 .container-txt3 {
   text-align: center;
@@ -192,7 +189,7 @@ body {
 #img {
   width: 100%;
   height: 1000px;
-  filter: brightness(0.2); 
+  filter: brightness(0.2);
   object-fit: cover;
 }
 
@@ -201,7 +198,7 @@ body {
 }
 
 .item p {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .item2 p {
@@ -239,7 +236,7 @@ body {
 #img4 {
   width: 100%;
   height: 400px;
-  filter: brightness(0.3); 
+  filter: brightness(0.3);
   background-attachment: fixed;
   object-fit: cover;
   position: relative;
@@ -254,7 +251,7 @@ body {
   margin-left: 20px;
   margin-bottom: 200px;
   object-fit: cover;
-}  
+}
 
 .titulo1 {
   position: absolute;
@@ -269,7 +266,6 @@ body {
 .titulo1:hover {
   color: #af9a7c;
 }
-
 
 .item3 h2 {
   font-size: 38px;
@@ -303,33 +299,31 @@ body {
   font-size: 15.5px;
 }
 
-
 .section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; 
-  max-width: 100%; 
-  height: 850px; 
+  width: 100%;
+  max-width: 100%;
+  height: 850px;
   background-color: black;
   margin-bottom: 50px;
   color: whitesmoke;
 }
 
 .section2 h2 {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
-  
-.section2 p {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 60px;
 
+.section2 p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .section2 div a {
@@ -337,7 +331,6 @@ body {
   justify-content: center;
   justify-items: center;
   margin-left: 410px;
-
 }
 
 section.space2 {
@@ -393,12 +386,11 @@ section.space2 {
 }
 
 .titulo1 {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    text-align: center
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
-
 
 .button3 {
   width: 100px;
@@ -421,8 +413,8 @@ section.space2 {
 }
 
 .space2 {
-  display: flex; /* Isso coloca a imagem e os textos lado a lado */
-  align-items: center; /* Centraliza os itens verticalmente */
+  display: flex;
+  align-items: center;
   margin-left: 100px;
   width: 100%;
 }
@@ -436,21 +428,21 @@ section.space2 {
   font-size: 20px;
 }
 
-.btn-intro-3{
+.btn-intro-3 {
   width: 256px;
   color: black;
-  font-size: 15px; 
-  padding: 8px;  
-  line-height: 1.2;  
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;  
-  margin-top: 50px;  
+  display: block;
+  margin-top: 50px;
   margin-left: auto;
-  margin-right: auto; 
-  border: 4px solid black;  
+  margin-right: auto;
+  border: 4px solid black;
   border-radius: 20px;
 }
 
@@ -484,26 +476,26 @@ footer h1 {
   width: 256px;
   color: #fff;
   background-color: black;
-  font-size: 15px;  /* Tamanho da fonte reduzido */
-  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2;  /* Ajuste do line-height */
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
+  display: block;
+  margin-top: 50px;
   margin-bottom: 30px;
   margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
+  margin-right: auto;
+  border: 4px solid whitesmoke;
   border-radius: 20px;
 }
 
 .contact-button:hover {
   background-color: black;
   color: white;
-  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
+  text-decoration: underline;
   text-decoration-color: whitesmoke;
 }
 
@@ -511,29 +503,28 @@ footer h1 {
   width: 256px;
   color: #fff;
   background-color: black;
-  font-size: 15px;  /* Tamanho da fonte reduzido */
-  padding: 8px;  /* Padding ajustado para reduzir o tamanho */
-  line-height: 1.2;  /* Ajuste do line-height */
+  font-size: 15px;
+  padding: 8px;
+  line-height: 1.2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;  /* Faz o botão ser um bloco, ocupando uma linha inteira */
-  margin-top: 50px;  /* Adiciona um espaçamento entre o texto e o botão */
+  display: block;
+  margin-top: 50px;
   margin-bottom: 30px;
   margin-left: auto;
-  margin-right: auto; /* Centraliza o botão */
-  border: 4px solid whitesmoke;  /* Adiciona uma borda ao botão */
+  margin-right: auto;
+  border: 4px solid whitesmoke;
   border-radius: 20px;
 }
 
 .contact-button2:hover {
   background-color: black;
   color: white;
-  text-decoration: underline; /* Adiciona o tracinho embaixo do texto */
+  text-decoration: underline;
   text-decoration-color: whitesmoke;
 }
-  
 
 .social-icon {
   display: inline-block;
@@ -548,7 +539,7 @@ footer h1 {
 }
 
 .social-icon i:hover {
-  color: #ffcc00; /* Cor de destaque ao passar o mouse, você pode mudar */
+  color: #ffcc00;
 }
 
 #copyright {
