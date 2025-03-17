@@ -283,6 +283,15 @@ footer {
   text-decoration-color: whitesmoke;
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .social-icon {
   display: inline-block;
   margin: 10px;
@@ -296,6 +305,7 @@ footer {
 }
 
 .social-icon i:hover {
+  animation: grow 0.3s forwards; 
   color: #ffcc00;
 }
 

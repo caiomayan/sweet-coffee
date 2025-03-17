@@ -204,6 +204,15 @@ footer {
   text-decoration: underline;
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .social-icon {
   display: inline-block;
   margin: 10px;
@@ -217,5 +226,6 @@ footer {
 }
 
 .social-icon i:hover {
-  color: #e4ceaf;
+  animation: grow 0.3s forwards;
+  color: #ffcc00;
 }
