@@ -4,7 +4,7 @@ Bem-vindos ao ***Sweet Coffee***!
 ![Sweet Coffee Homepage](https://raw.githubusercontent.com/caiomayan/sweet-coffee/refs/heads/main/img/preview.png) 
 
 ## Visão geral
-Esse projeto é uma aplicação web que tem o intuito de apresentar o portifólio da cafeteria ***Sweet Coffee***, no qual nesse contexto, o site dispõe de canal de atendimento e informações sobre o estabelecimento, como: 
+Esse projeto é uma aplicação web que tem o intuito de apresentar o portfólio da cafeteria ***Sweet Coffee***, no qual nesse contexto, o site dispõe de canal de atendimento e informações sobre o estabelecimento, como: 
 
  - Quem somos
  - Fale conosco
